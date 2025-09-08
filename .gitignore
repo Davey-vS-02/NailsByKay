@@ -4,5 +4,4 @@
 /public/storage
 /public/build
 /storage/*.key
-Dockerfile
 /public/hot
