@@ -25,7 +25,7 @@
                 <v-card-text class="text-body-1 text-md-h6">
                     <strong>Head Office:</strong> 123 Main Street, Johannesburg, 2000<br>
                     <strong>Phone:</strong> +27 11 123 4567<br>
-                    <strong>Email:</strong> info@ttautomechanic.co.za<br>
+                    <strong>Email:</strong> info@nailsbykay.co.za<br>
                     <strong>Business Hours:</strong> Mon – Fri: 08:00 – 17:00, Sat: 08:00 – 13:00
                 </v-card-text>
             </v-card>

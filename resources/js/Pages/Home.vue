@@ -10,7 +10,7 @@
                 <v-container class="parallax-content pa-4 pa-md-14" fluid>
                     <v-card class="mt-8" color="transparent" elevation="0">
                         <v-card-title class="text-h6 text-white" color="white">
-                            TT Auto Mechanic Service & Repair
+                            NailsByKay
                         </v-card-title>
                         <v-card-text class="text-h4 text-md-h2 text-white">
                             Driven by Trust. Powered by Skill.
@@ -33,18 +33,18 @@
             <v-card class="ma-4 ma-md-15 pa-4" color="transparent" elevation="0">
                 <v-card-title class="text-h6">Our Mission</v-card-title>
                 <v-card-text class="text-h5 text-md-h4">
-                    At TT Auto Mechanic Service & Repair, our mission is to keep drivers safe and confident on the road by providing reliable, affordable, and high-quality automotive care. We are committed to honest service, expert craftsmanship, and building lasting trust with every customer, ensuring every vehicle leaves our workshop road-ready and performing at its best.
+                    At NailsByKay, our mission is to keep drivers safe and confident on the road by providing reliable, affordable, and high-quality automotive care. We are committed to honest service, expert craftsmanship, and building lasting trust with every customer, ensuring every vehicle leaves our workshop road-ready and performing at its best.
                 </v-card-text>
             </v-card>
 
             <v-card class="ma-4 ma-md-15 pa-4 rounded-lg" elevation="16">
                 <v-card-title class="text-h4 text-md-h2">About us</v-card-title>
                 <v-card-text class="text-body-1 text-md-h6">
-                    TT Auto Mechanic Service & Repair is a proudly South African, Level 1 BEE-registered company dedicated to providing expert automotive service and repair. Our team combines experience, skill, and passion for cars to ensure every vehicle is cared for with precision and professionalism.
+                    NailsByKay is a proudly South African, Level 1 BEE-registered company dedicated to providing expert automotive service and repair. Our team combines experience, skill, and passion for cars to ensure every vehicle is cared for with precision and professionalism.
                     <br><br>
                     We are driven by values of trust, reliability, and integrity. Every customer can expect honest advice, fair pricing, and workmanship that prioritizes safety and performance. Our BEE Level 1 status reflects our commitment to inclusivity and empowerment, contributing to growth and opportunity within our community.
                     <br><br>
-                    From routine maintenance to complex mechanical repairs, we ensure that every vehicle leaves our workshop road-ready, safe, and efficient. At TT Auto Mechanic Service & Repair, we don’t just fix cars — we build lasting relationships with our customers through quality service and care.
+                    From routine maintenance to complex mechanical repairs, we ensure that every vehicle leaves our workshop road-ready, safe, and efficient. At NailsByKay, we don’t just fix cars — we build lasting relationships with our customers through quality service and care.
                 </v-card-text>
 
                 <v-container class="mb-5">
