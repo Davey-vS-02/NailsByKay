@@ -34,12 +34,6 @@ COPY . .
 # 7️⃣ Install PHP dependencies
 RUN composer install --optimize-autoloader --no-dev
 
-# 8️⃣ Clear Laravel caches
-RUN php artisan config:clear \
-    && php artisan cache:clear \
-    && php artisan route:clear \
-    && php artisan view:clear
-
 # 9️⃣ Build Vite assets
 RUN npm install && npm run build
 
@@ -54,4 +48,8 @@ EXPOSE 10000
 
 # 1️⃣3️⃣ Start PHP-FPM + Nginx (Nginx in foreground)
 RUN echo "listen = 127.0.0.1:9000" > /usr/local/etc/php-fpm.d/zz-docker.conf
-CMD /usr/sbin/nginx -g "daemon off;" & php-fpm -F
+CMD php artisan config:clear \
+    && php artisan cache:clear \
+    && php artisan route:clear \
+    && php artisan view:clear \
+    && /usr/sbin/nginx -g "daemon off;" & php-fpm -F
