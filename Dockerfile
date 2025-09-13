@@ -48,7 +48,8 @@ EXPOSE 10000
 
 # 1️⃣3️⃣ Start PHP-FPM + Nginx (Nginx in foreground)
 RUN echo "listen = 127.0.0.1:9000" > /usr/local/etc/php-fpm.d/zz-docker.conf
-CMD php artisan config:clear \
+CMD php artisan migrate --force \
+    && php artisan config:clear \
     && php artisan cache:clear \
     && php artisan route:clear \
     && php artisan view:clear \
