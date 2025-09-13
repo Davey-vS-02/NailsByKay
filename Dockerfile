@@ -47,5 +47,5 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 EXPOSE 10001
 
 # 1️⃣2️⃣ Start PHP-FPM + Nginx (Nginx in foreground)
-RUN echo "listen = 127.0.0.1:9000" > /usr/local/etc/php-fpm.d/zz-docker.conf
+RUN echo "listen = 127.0.0.1:9001" > /usr/local/etc/php-fpm.d/zz-docker.conf
 CMD /usr/sbin/nginx -g "daemon off;" & php-fpm -F
