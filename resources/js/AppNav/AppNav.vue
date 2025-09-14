@@ -12,7 +12,7 @@
             class="text-h6 text-xs-caption"
             style="cursor: pointer;"
         > 
-            NailsByKay
+            NailsByKay | BTS Beauty Studio
         </v-toolbar-title>
 
         <!-- Spacer pushes icons to the right -->

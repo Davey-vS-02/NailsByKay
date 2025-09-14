@@ -10,7 +10,7 @@
                 <v-container class="parallax-content pa-4 pa-md-14" fluid>
                     <v-card class="mt-8" color="transparent" elevation="0">
                         <v-card-title class="text-h5 text-white" color="white">
-                            NailsByKay
+                            NailsByKay | BTS Beauty Studio
                         </v-card-title>
                         <v-card-text class="text-h5 text-md-h2 text-white">
                             Where beauty is nailed down
