@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app color="primary" elevate-on-scroll>
+    <v-app-bar app color="primary" elevate-on-scroll height="50">
         <v-icon 
             class="ml-5"
             @click="navigateToHomePage()"

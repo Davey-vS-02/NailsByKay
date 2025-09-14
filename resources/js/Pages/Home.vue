@@ -30,6 +30,37 @@
                 </v-container>
             </v-parallax>
 
+            <v-card class="ma-4 ma-md-15 pa-3 rounded-lg" elevation="16">
+                <v-card-title class="text-h4 text-md-h2 text-center">
+                    Client testimonials
+                </v-card-title>
+                <v-card-text class="text-body-1 text-md-h6 text-center mb-3">
+                    If you don't believe us, hear it from our clients.
+                </v-card-text>
+                <v-carousel 
+                    :show-arrows="false" 
+                    cycle
+                    class="mb-7 w-50 mx-auto rounded-2xl"
+                >
+                    <v-carousel-item
+                        v-for="(item, i) in items"
+                        :key="i"
+                        :src="item.src"
+                        cover
+                    ></v-carousel-item>
+                </v-carousel>
+                <v-btn
+                    prepend-icon="mdi-book"
+                    color="darkBackground"
+                    size="large"
+                    variant="tonal"
+                    class="rounded-lg mt-6 mt-md-8 ml-0 ml-md-7"
+                    @click="openAboutPage"
+                >
+                    Read More
+                </v-btn>
+            </v-card>
+
             <v-card class="ma-4 ma-md-15 pa-4" color="transparent" elevation="0">
                 <v-card-title class="text-h6">Our Mission</v-card-title>
                 <v-card-text class="text-h5 text-md-h4">
@@ -167,6 +198,11 @@ export default {
             isHovered1: false,
             isHovered2: false,
             isHovered3: false,
+            items: [
+                { src: '/images/nailset1.jpg' },
+                { src: '/images/nailset2.jpg' },
+                { src: '/images/nailset3.jpg' },
+            ],
         };
     },
     methods: {
