@@ -8,9 +8,9 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi'
 const customTheme = {
     dark: false,
     colors: {
-        primary: "#1A2238",
-        secondary: "#C0C0C0",
-        accent: "#00BFCF",
+        primary: "#005017ff",
+        secondary: "#818181ff",
+        accent: "#68cd68ff",
         background: "#ffffff",
         darkBackground: "#232323",
         callToAction: "#FFC857",

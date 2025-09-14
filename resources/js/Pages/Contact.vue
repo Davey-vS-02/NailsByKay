@@ -3,7 +3,7 @@
         <app-nav></app-nav>
         <v-main>
             <v-parallax
-                src="/images/CarsLandingPageWallpaper2.jpeg"
+                src="/images/NailSalon.png"
                 height="70vh"
             >
                 <div class="parallax-overlay"></div>
