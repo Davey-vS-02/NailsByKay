@@ -5,7 +5,7 @@
             @click="navigateToHomePage()"
             style="cursor: pointer;"
         >
-            mdi-car
+            mdi-flower-tulip-outline
         </v-icon>
         <v-toolbar-title 
             @click="navigateToHomePage()"

@@ -3,23 +3,23 @@
         <app-nav></app-nav>
         <v-main>
             <v-parallax
-            src="/images/CarsLandingPageWallpaper2.jpeg"
+            src="/images/NailSalon.png"
             height="100vh"
             >
                 <div class="parallax-overlay"></div>
                 <v-container class="parallax-content pa-4 pa-md-14" fluid>
                     <v-card class="mt-8" color="transparent" elevation="0">
-                        <v-card-title class="text-h6 text-white" color="white">
+                        <v-card-title class="text-h5 text-white" color="white">
                             NailsByKay
                         </v-card-title>
                         <v-card-text class="text-h4 text-md-h2 text-white">
-                            Driven by Trust. Powered by Skill.
+                            Where beauty is nailed down
                         </v-card-text>
                     </v-card>
 
                     <v-btn
                         prepend-icon="mdi-flag"
-                        color="white"
+                        color="accent"
                         size="large"
                         variant="outlined"
                         class="rounded-lg mt-8 ml-2 ml-md-7"
@@ -33,18 +33,18 @@
             <v-card class="ma-4 ma-md-15 pa-4" color="transparent" elevation="0">
                 <v-card-title class="text-h6">Our Mission</v-card-title>
                 <v-card-text class="text-h5 text-md-h4">
-                    At NailsByKay, our mission is to keep drivers safe and confident on the road by providing reliable, affordable, and high-quality automotive care. We are committed to honest service, expert craftsmanship, and building lasting trust with every customer, ensuring every vehicle leaves our workshop road-ready and performing at its best.
+                    To provide a modern, luxurious nail experience where elegance meets creativity, ensuring every client leaves polished, refreshed, and ready to shine.
                 </v-card-text>
             </v-card>
 
             <v-card class="ma-4 ma-md-15 pa-4 rounded-lg" elevation="16">
-                <v-card-title class="text-h4 text-md-h2">About us</v-card-title>
+                <v-card-title class="text-h4 text-md-h2">About me</v-card-title>
                 <v-card-text class="text-body-1 text-md-h6">
-                    NailsByKay is a proudly South African, Level 1 BEE-registered company dedicated to providing expert automotive service and repair. Our team combines experience, skill, and passion for cars to ensure every vehicle is cared for with precision and professionalism.
+                    What began as a passion project at home has grown into a professional nail artistry career built on creativity, precision, and care. Specializing in intricate and detailed designs, Kailyn turned her love for nail art into a business that highlights individuality and self-expression.
                     <br><br>
-                    We are driven by values of trust, reliability, and integrity. Every customer can expect honest advice, fair pricing, and workmanship that prioritizes safety and performance. Our BEE Level 1 status reflects our commitment to inclusivity and empowerment, contributing to growth and opportunity within our community.
+                    Now based at BTS Beauty, she continues to offer a personal, client-focused experience within a professional salon setting. Each set of nails is treated as a bespoke work of art, crafted with meticulous attention to detail and tailored to reflect each client’s unique style.
                     <br><br>
-                    From routine maintenance to complex mechanical repairs, we ensure that every vehicle leaves our workshop road-ready, safe, and efficient. At NailsByKay, we don’t just fix cars — we build lasting relationships with our customers through quality service and care.
+                    With a commitment to both artistry and quality, her work goes beyond beauty—it’s about confidence, creativity, and leaving clients with nails that are as expressive as they are elegant.
                 </v-card-text>
 
                 <v-container class="mb-5">
@@ -68,9 +68,9 @@
             </v-card>
 
             <v-card class="pa-4 rounded-0" color="darkBackground" elevation="0">
-                <v-card-title class="text-h4 text-md-h2">Why choose us:</v-card-title>
-                <v-card-text class="text-body-1">
-                    Reliable service, honest advice, and expertise you can count on.
+                <v-card-title class="text-h4 text-md-h2">Why choose me:</v-card-title>
+                <v-card-text class="text-h6">
+                    Because your nails deserve more than ordinary.
                 </v-card-text>
 
                 <v-timeline
@@ -84,11 +84,11 @@
                             class="w-75"
                             @mouseover="isHovered1 = true"
                             @mouseleave="isHovered1 = false"
-                            :color="isHovered1 ? 'darkgray' : 'white'">
-                            <v-icon class="mt-5 ml-5">mdi-tools</v-icon>
-                            <v-card-title>Trusted Expertise</v-card-title>
+                            :color="isHovered1 ? 'primary' : 'white'">
+                            <v-icon class="mt-5 ml-5">mdi-magnify-scan</v-icon>
+                            <v-card-title>Attention to detail</v-card-title>
                             <v-card-text>
-                                Our team combines years of automotive experience with skilled craftsmanship to ensure your vehicle is safe, reliable, and performing at its best.
+                                Every set of nails is crafted with precision and care. From clean application to intricate designs, I ensure each client leaves with nails that look flawless and last.    
                             </v-card-text>
                         </v-card>
                     </v-timeline-item>
@@ -98,11 +98,11 @@
                             class="w-75"
                             @mouseover="isHovered2 = true"
                             @mouseleave="isHovered2 = false"
-                            :color="isHovered2 ? 'darkgray' : 'white'">
-                            <v-icon class="mt-5 ml-5">mdi-certificate</v-icon>
-                            <v-card-title>Level 1 BEE Certified</v-card-title>
+                            :color="isHovered2 ? 'primary' : 'white'">
+                            <v-icon class="mt-5 ml-5">mdi-account-heart</v-icon>
+                            <v-card-title>Personalized Experience</v-card-title>
                             <v-card-text>
-                                As a Level 1 BEE-registered company, we are committed to inclusivity and empowerment while delivering top-quality service.
+                                No two clients are the same, and neither are their nails. I take the time to understand your style and preferences, creating designs that reflect your personality and vision.    
                             </v-card-text>
                         </v-card>
                     </v-timeline-item>
@@ -112,11 +112,11 @@
                             class="w-75"
                             @mouseover="isHovered3 = true"
                             @mouseleave="isHovered3 = false"
-                            :color="isHovered3 ? 'darkgray' : 'white'">
-                            <v-icon class="mt-5 ml-5">mdi-handshake</v-icon>
-                            <v-card-title>Customer-Focused</v-card-title>
+                            :color="isHovered3 ? 'primary' : 'white'">
+                            <v-icon class="mt-5 ml-5">mdi-palette</v-icon>
+                            <v-card-title>Creative Expertise</v-card-title>
                             <v-card-text>
-                                We prioritize honesty, transparency, and personalized care, building lasting relationships with every client by exceeding expectations at every visit.
+                                Specializing in intricate nail art, I bring creativity and innovation to every appointment. Whether you want something subtle or bold, I turn ideas into unique works of art at your fingertips.    
                             </v-card-text>
                         </v-card>
                     </v-timeline-item>
@@ -125,7 +125,7 @@
                     <v-col cols="auto">
                         <v-btn 
                         prepend-icon="mdi-flag" 
-                        color="white" 
+                        color="accent" 
                         size="large" 
                         variant="outlined" 
                         class="rounded-lg" 
