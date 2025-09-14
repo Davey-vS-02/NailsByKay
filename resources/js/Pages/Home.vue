@@ -12,7 +12,7 @@
                         <v-card-title class="text-h5 text-white" color="white">
                             NailsByKay
                         </v-card-title>
-                        <v-card-text class="text-h4 text-md-h2 text-white">
+                        <v-card-text class="text-h5 text-md-h2 text-white">
                             Where beauty is nailed down
                         </v-card-text>
                     </v-card>
@@ -100,7 +100,7 @@
                             @mouseleave="isHovered2 = false"
                             :color="isHovered2 ? 'primary' : 'white'">
                             <v-icon class="mt-5 ml-5">mdi-account-heart</v-icon>
-                            <v-card-title>Personalized Experience</v-card-title>
+                            <v-card-title>Personalized Care</v-card-title>
                             <v-card-text>
                                 No two clients are the same, and neither are their nails. I take the time to understand your style and preferences, creating designs that reflect your personality and vision.    
                             </v-card-text>
