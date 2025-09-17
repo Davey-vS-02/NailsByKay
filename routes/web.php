@@ -32,6 +32,10 @@ Route::get('/contact', function () {
     return Inertia::render('Contact');
 })->name('contact');
 
+Route::get('/testimonials', function () {
+    return Inertia::render('Testimonials');
+})->name('testimonials');
+
 Route::get('/profile', function () {
     return Inertia::render('ProfileInfo');
 })->name('user.profile.info');

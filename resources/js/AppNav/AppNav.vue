@@ -12,7 +12,7 @@
             class="text-h6 text-xs-caption"
             style="cursor: pointer;"
         > 
-            NailsByKay | BTS Beauty Studio
+            NailsByKay
         </v-toolbar-title>
 
         <!-- Spacer pushes icons to the right -->
@@ -59,7 +59,8 @@ export default {
             publicNavLinks: [
                 { label: 'Home', routeName: 'home' },
                 { label: 'About', routeName: 'about' },
-                { label: 'Services', routeName: 'products' },
+                { label: 'Nail Gallery', routeName: 'products' },
+                { label: 'Testimonials', routeName: 'testimonials' },
                 { label: 'Contact Us', routeName: 'contact' },
             ],
             userNavLinks: [

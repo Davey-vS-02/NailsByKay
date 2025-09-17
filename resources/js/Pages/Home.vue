@@ -40,25 +40,28 @@
                 <v-carousel 
                     :show-arrows="false" 
                     cycle
-                    class="mb-7 w-50 mx-auto rounded-2xl"
+                    hide-delimiters
+                    class="mb-7 mx-auto rounded-2xl w-75"\
                 >
                     <v-carousel-item
-                        v-for="(item, i) in items"
+                        v-for="(testimonial, i) in testimonials"
                         :key="i"
-                        :src="item.src"
+                        :src="testimonial.src"
                         cover
                     ></v-carousel-item>
                 </v-carousel>
-                <v-btn
-                    prepend-icon="mdi-book"
-                    color="darkBackground"
-                    size="large"
-                    variant="tonal"
-                    class="rounded-lg mt-6 mt-md-8 ml-0 ml-md-7"
-                    @click="openAboutPage"
-                >
-                    Read More
-                </v-btn>
+                <div class="d-flex justify-center">
+                    <v-btn
+                        prepend-icon="mdi-book"
+                        color="darkBackground"
+                        size="large"
+                        variant="tonal"
+                        class="rounded-lg my-6 my-md-8"
+                        @click="openAboutPage"
+                    >
+                        Read More
+                    </v-btn>
+                </div>
             </v-card>
 
             <v-card class="ma-4 ma-md-15 pa-4" color="transparent" elevation="0">
@@ -198,10 +201,9 @@ export default {
             isHovered1: false,
             isHovered2: false,
             isHovered3: false,
-            items: [
-                { src: '/images/nailset1.jpg' },
-                { src: '/images/nailset2.jpg' },
-                { src: '/images/nailset3.jpg' },
+            testimonials: [
+                { src: '/images/Testimonial1.jpeg' },
+                { src: '/images/Testimonial2.jpeg' },
             ],
         };
     },
