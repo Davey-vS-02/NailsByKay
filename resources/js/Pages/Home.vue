@@ -41,7 +41,7 @@
                     :show-arrows="false" 
                     cycle
                     hide-delimiters
-                    class="mb-7 mx-auto rounded-2xl w-75"\
+                    class="mb-7 mx-auto rounded-2xl w-75"
                 >
                     <v-carousel-item
                         v-for="(testimonial, i) in testimonials"
