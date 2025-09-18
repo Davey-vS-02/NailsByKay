@@ -37,19 +37,17 @@
                 <v-card-text class="text-body-1 text-md-h6 text-center mb-3">
                     If you don't believe us, hear it from our clients.
                 </v-card-text>
-                <v-carousel 
-                    :show-arrows="false" 
-                    cycle
-                    hide-delimiters
-                    class="mb-7 mx-auto rounded-2xl w-75"
+                <Swiper
+                    :slides-per-view="3"
+                    :space-between="50"
+                    @swiper="onSwiper"
+                    @slideChange="onSlideChange"
+                    class="mx-5"
                 >
-                    <v-carousel-item
-                        v-for="(testimonial, i) in testimonials"
-                        :key="i"
-                        :src="testimonial.src"
-                        cover
-                    ></v-carousel-item>
-                </v-carousel>
+                    <SwiperSlide v-for="(testimonial, i) in testimonials" :key="i">
+                        <img :src="testimonial.src" class="rounded-xl w-100" />
+                    </SwiperSlide>
+                </Swiper>
                 <div class="d-flex justify-center">
                     <v-btn
                         prepend-icon="mdi-book"
@@ -179,11 +177,31 @@ import AppNav from "../AppNav/AppNav.vue";
 import VideoPlayer from "../Components/VideoPlayer.vue";
 import {router} from "@inertiajs/vue3";
 
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
 export default {
     name: 'Home',
     components: {
         AppNav,
         VideoPlayer,
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+      const onSwiper = (swiper) => {
+        // Do something
+      };
+      const onSlideChange = () => {
+        // Do something
+      };
+      return {
+        onSwiper,
+        onSlideChange,
+      };
     },
     data() {
         return {
@@ -202,6 +220,10 @@ export default {
             isHovered2: false,
             isHovered3: false,
             testimonials: [
+                { src: '/images/Testimonial1.jpeg' },
+                { src: '/images/Testimonial2.jpeg' },
+                { src: '/images/Testimonial1.jpeg' },
+                { src: '/images/Testimonial2.jpeg' },
                 { src: '/images/Testimonial1.jpeg' },
                 { src: '/images/Testimonial2.jpeg' },
             ],
