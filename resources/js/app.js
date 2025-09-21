@@ -9,7 +9,7 @@ import {route} from 'ziggy-js';
 import vuetify from "@/vuetify.js";
 import '@mdi/font/css/materialdesignicons.css';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const appName = import.meta.env.VITE_APP_NAME || 'NailsByKay';
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
