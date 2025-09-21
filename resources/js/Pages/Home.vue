@@ -38,8 +38,12 @@
                     If you don't believe us, hear it from our clients.
                 </v-card-text>
                 <Swiper
-                    :slides-per-view="3"
-                    :space-between="50"
+                    :space-between="30"
+                    :breakpoints="{
+                        0: { slidesPerView: 1 },
+                        600: { slidesPerView: 2 },
+                        960: { slidesPerView: 3 }
+                    }"
                     @swiper="onSwiper"
                     @slideChange="onSlideChange"
                     class="mx-5"
