@@ -46,24 +46,12 @@
                     }"
                     @swiper="onSwiper"
                     @slideChange="onSlideChange"
-                    class="mx-5"
+                    class="mx-5 mb-5"
                 >
                     <SwiperSlide v-for="(testimonial, i) in testimonials" :key="i">
                         <img :src="testimonial.src" class="rounded-xl w-100" />
                     </SwiperSlide>
                 </Swiper>
-                <div class="d-flex justify-center">
-                    <v-btn
-                        prepend-icon="mdi-book"
-                        color="darkBackground"
-                        size="large"
-                        variant="tonal"
-                        class="rounded-lg my-6 my-md-8"
-                        @click="openAboutPage"
-                    >
-                        Read More
-                    </v-btn>
-                </div>
             </v-card>
 
             <v-card class="ma-4 ma-md-15 pa-4" color="transparent" elevation="0">
@@ -159,15 +147,16 @@
                 </v-timeline>
                 <v-row justify="center" class="mt-8 mb-8">
                     <v-col cols="auto">
-                        <v-btn 
-                        prepend-icon="mdi-flag" 
-                        color="accent" 
-                        size="large" 
-                        variant="outlined" 
-                        class="rounded-lg" 
-                        @click="openContactPage()"
+                        <v-btn
+                        prepend-icon="mdi-calendar"
+                        color="primary"
+                        size="large"
+                        variant="outlined"
+                        class="rounded-lg"
+                        href="https://www.fresha.com/a/bts-beauty-centurion-39-hornbill-avenue-rl4ixmzz"
+                        target="_blank"
                         >
-                        Contact Us
+                            Book now
                         </v-btn>
                     </v-col>
                 </v-row>

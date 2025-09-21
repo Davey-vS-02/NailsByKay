@@ -29,6 +29,21 @@
                     <strong>Business Hours:</strong> Mon – Fri: 08:00 – 17:00, Sat: 08:00 – 13:00
                 </v-card-text>
             </v-card>
+            <v-row justify="center" class="mb-8">
+                <v-col cols="auto">
+                    <v-btn
+                    prepend-icon="mdi-calendar"
+                    color="primary"
+                    size="large"
+                    variant="outlined"
+                    class="rounded-lg"
+                    href="https://www.fresha.com/a/bts-beauty-centurion-39-hornbill-avenue-rl4ixmzz"
+                    target="_blank"
+                    >
+                        Book now
+                    </v-btn>
+                </v-col>
+            </v-row>
         </v-main>
     </v-app>
 </template>
