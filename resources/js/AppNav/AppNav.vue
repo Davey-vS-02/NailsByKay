@@ -1,51 +1,46 @@
 <template>
-    <v-app-bar app color="primary" elevate-on-scroll height="60">
-        <v-icon 
-            class="ml-5"
-            @click="navigateToHomePage()"
-            style="cursor: pointer;"
-        >
-            mdi-flower-tulip-outline
-        </v-icon>
-        <v-toolbar-title 
-            @click="navigateToHomePage()"
-            class="text-h6 text-xs-caption"
-            style="cursor: pointer;"
-        > 
-            NailsByKay
-        </v-toolbar-title>
+    <v-app-bar color="white" height="120" elevation="0" style="position: relative;">
+        <!-- Left nav items -->
+        <v-list dense class="d-flex flex-row align-center ml-5">
+            <v-list-item
+                v-for="(link, index) in leftNavLinks"
+                :key="index"
+                @click="navigate(link.routeName)"
+                class="px-4"
+            >
+                <v-list-item-title>{{ link.label }}</v-list-item-title>
+            </v-list-item>
+        </v-list>
 
-        <!-- Spacer pushes icons to the right -->
+        <!-- Spacer to center the title -->
         <v-spacer></v-spacer>
 
-        <!-- Optional: menu toggle for mobile -->
-        <v-app-bar-nav-icon @click="toggleDrawer" class="mr-2"></v-app-bar-nav-icon>
+        <!-- Centered brand -->
+        <div class="d-flex align-center h-100">
+            <v-toolbar-title
+                @click="navigateToHomePage"
+                class="text-h3"
+                style="cursor: pointer; font-family: 'Lora'; line-height: 1.2; padding: 0;"
+            >
+                NailsByKay | BTS Beauty
+            </v-toolbar-title>
+        </div>
 
-        <v-navigation-drawer
-            v-model="navDrawerOpen"
-            style="height: 100vh; position: fixed;"
-            color="primary"
-        >
-            <v-list dense>
-                <v-list-item
-                    v-for="(link, index) in publicNavLinks"
-                    :key="index"
-                    @click="navigate(link.routeName)"
-                >
-                    <v-list-item-title>{{ link.label }}</v-list-item-title>
-                </v-list-item>
-                <template v-if="$page.props.auth.user">
-                    <v-list-item
-                        v-for="(link, index) in userNavLinks"
-                        :key="index"
-                        @click="navigate(link.routeName)"
-                    >
-                        <v-list-item-title>{{ link.label }}</v-list-item-title>
-                    </v-list-item>
-                </template>
-            </v-list>
-        </v-navigation-drawer>
-    </v-app-bar>
+        <!-- Spacer to center the title -->
+        <v-spacer></v-spacer>
+
+        <!-- Right nav items -->
+        <v-list dense class="d-flex flex-row align-center mr-5">
+            <v-list-item
+            v-for="(link, index) in rightNavLinks"
+            :key="index"
+            @click="navigate(link.routeName)"
+            class="px-4"
+            >
+            <v-list-item-title>{{ link.label }}</v-list-item-title>
+            </v-list-item>
+        </v-list>
+    </v-app-bar>   
 </template>
 
 <script>
@@ -56,11 +51,12 @@ export default {
     data() {
         return {
             navDrawerOpen: false,
-            publicNavLinks: [
+            leftNavLinks: [
                 { label: 'Home', routeName: 'home' },
                 { label: 'About', routeName: 'about' },
+            ],
+            rightNavLinks: [
                 { label: 'Nail Gallery', routeName: 'products' },
-                { label: 'Testimonials', routeName: 'testimonials' },
                 { label: 'Contact Us', routeName: 'contact' },
             ],
             userNavLinks: [
@@ -95,3 +91,6 @@ export default {
     }
 };
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">

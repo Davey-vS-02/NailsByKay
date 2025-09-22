@@ -8,9 +8,9 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi'
 const customTheme = {
     dark: false,
     colors: {
-        primary: "#ff6ad2ff",
+        primary: "#5c5c5cff",
         secondary: "#818181ff",
-        accent: "#ff9af5ff",
+        accent: "#ffffffff",
         background: "#ffffff",
         darkBackground: "#232323",
         callToAction: "#FFC857",
@@ -35,6 +35,9 @@ const customTheme = {
         white: "#FFFFFF",
         muted: "#6c757d",
     },
+    variables: {
+    'font-family': '"Lora", sans-serif', // 👈 set your default font
+  },
 };
 
 const vuetify = createVuetify({

@@ -2,43 +2,38 @@
     <v-app>
         <app-nav></app-nav>
         <v-main>
-            <v-parallax
-            src="/images/nailsalon.png"
-            height="100vh"
-            >
-                <div class="parallax-overlay"></div>
-                <v-container class="parallax-content pa-4 pa-md-14" fluid>
-                    <v-card class="mt-8" color="transparent" elevation="0">
-                        <v-card-title class="text-h5 text-white" color="white">
-                            NailsByKay | BTS Beauty Studio
-                        </v-card-title>
-                        <v-card-text class="text-h5 text-md-h2 text-white">
-                            Where beauty is nailed down
-                        </v-card-text>
-                    </v-card>
-
-                    <v-btn
-                        prepend-icon="mdi-flag"
-                        color="accent"
-                        size="large"
-                        variant="outlined"
-                        class="rounded-lg mt-8 ml-2 ml-md-7"
-                        @click="openProductsPage"
-                    >
-                        Get started
-                    </v-btn>
+            <v-card class="mx-auto mb-4 mb-md-15 py-3 w-50 rounded-lg" elevation="0">
+                <!-- Round image of Kailyn -->
+                <v-container class="d-flex justify-center mb-8">
+                    <v-avatar size="250">
+                        <v-img src="/images/kailynTechPhoto.jpeg" alt="Kailyn"></v-img>
+                    </v-avatar>
                 </v-container>
-            </v-parallax>
-
-            <v-card class="ma-4 ma-md-15 pa-3 rounded-lg" elevation="16">
+                <v-card-title 
+                class="text-h4 text-md-h2 text-center mb-8" 
+                style="cursor: pointer; font-family: 'Lora'; line-height: 1.2; padding: 0;"
+                >
+                    Hi, I am Kailyn.
+                </v-card-title>
+                <v-card-text 
+                class="text-body-1 text-md-h6 text-left"
+                style="cursor: pointer; font-family: 'Lora'; line-height: 2; padding: 0;"
+                >
+                    I’m a professional nail artist with a passion for creativity, detail, and helping my clients feel confident and beautiful. 
+                    What started as a hobby quickly grew into a career dedicated to turning nails into a canvas for self-expression. 
+                    Every design I create is personalized, polished, and crafted with care—because I believe your nails should be just as unique as you are.
+                </v-card-text>
+            </v-card>
+            
+            <v-card class="mx-10 my-3 ma-md-15 px-10 pt-5 pb-10 rounded-lg" elevation="16">
                 <v-card-title class="text-h4 text-md-h2 text-center">
                     Client testimonials
                 </v-card-title>
-                <v-card-text class="text-body-1 text-md-h6 text-center mb-3">
+                <v-card-text class="text-body-1 text-md-h6 text-center mb-4">
                     If you don't believe us, hear it from our clients.
                 </v-card-text>
                 <Swiper
-                    :space-between="30"
+                    :space-between="50"
                     :breakpoints="{
                         0: { slidesPerView: 1 },
                         600: { slidesPerView: 2 },
@@ -49,13 +44,29 @@
                     class="mx-5 mb-5"
                 >
                     <SwiperSlide v-for="(testimonial, i) in testimonials" :key="i">
-                        <img :src="testimonial.src" class="rounded-xl w-100" />
+                        <img :src="testimonial.src" class="rounded-xl w-100 testimonial-img" />
                     </SwiperSlide>
                 </Swiper>
+                
+                <v-row justify="center" class="mt-8 mb-1">
+                    <v-col cols="auto">
+                        <v-btn
+                        prepend-icon="mdi-calendar"
+                        color="black"
+                        size="large"
+                        variant="outlined"
+                        class="rounded-lg"
+                        href="https://www.fresha.com/a/bts-beauty-centurion-39-hornbill-avenue-rl4ixmzz"
+                        target="_blank"
+                        >
+                            Book now
+                        </v-btn>
+                    </v-col>
+                </v-row>
             </v-card>
 
             <v-card class="ma-4 ma-md-15 pa-4" color="transparent" elevation="0">
-                <v-card-title class="text-h6">Our Mission</v-card-title>
+                <v-card-title class="text-h6">My Mission</v-card-title>
                 <v-card-text class="text-h5 text-md-h4">
                     To provide a modern, luxurious nail experience where elegance meets creativity, ensuring every client leaves polished, refreshed, and ready to shine.
                 </v-card-text>
@@ -87,8 +98,6 @@
                         </v-col>
                     </v-row>
                 </v-container>
-
-                <!-- <video-player :options="videoOptions" class="ml-4 ml-md-12 mr-4 mr-md-12 mb-4 mb-md-12 pa-4 pa-md-16"/> -->
             </v-card>
 
             <v-card class="pa-4 rounded-0" color="darkBackground" elevation="0">
@@ -145,21 +154,6 @@
                         </v-card>
                     </v-timeline-item>
                 </v-timeline>
-                <v-row justify="center" class="mt-8 mb-8">
-                    <v-col cols="auto">
-                        <v-btn
-                        prepend-icon="mdi-calendar"
-                        color="primary"
-                        size="large"
-                        variant="outlined"
-                        class="rounded-lg"
-                        href="https://www.fresha.com/a/bts-beauty-centurion-39-hornbill-avenue-rl4ixmzz"
-                        target="_blank"
-                        >
-                            Book now
-                        </v-btn>
-                    </v-col>
-                </v-row>
             </v-card>
         </v-main>
     </v-app>
@@ -256,4 +250,13 @@ export default {
     pointer-events: auto;
     z-index: 5;
 }
+.testimonial-img {
+  width: 100%;
+  max-height: 85vh;
+  object-fit: cover;
+}
 </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
