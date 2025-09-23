@@ -5,31 +5,33 @@
             <v-card class="mx-auto mb-4 mb-md-15 py-3 w-50 rounded-lg" elevation="0">
                 <!-- Round image of Kailyn -->
                 <v-container class="d-flex justify-center mb-8">
-                    <v-avatar size="250">
+                    <v-avatar size="180">
                         <v-img src="/images/kailynTechPhoto.jpeg" alt="Kailyn"></v-img>
                     </v-avatar>
                 </v-container>
                 <v-card-title 
-                class="text-h4 text-md-h2 text-center mb-8" 
-                style="cursor: pointer; font-family: 'Lora'; line-height: 1.2; padding: 0;"
+                class="text-h6 text-md-h5 text-center mb-8 pa-0" 
+                style="cursor: pointer; font-family: 'Lora';"
                 >
                     Hi, I am Kailyn.
                 </v-card-title>
                 <v-card-text 
-                class="text-body-1 text-md-h6 text-left"
-                style="cursor: pointer; font-family: 'Lora'; line-height: 2; padding: 0;"
+                class="text-subtitle-1 text-md-body-1 text-left pa-0 mb-5"
+                style="cursor: pointer; font-family: 'Lora';"
                 >
-                    I’m a professional nail artist with a passion for creativity, detail, and helping my clients feel confident and beautiful. 
+                    I’m a professional nail artist with a passion for creativity, detail, and helping my clients feel confident and beautiful.
+                    <br><br>
                     What started as a hobby quickly grew into a career dedicated to turning nails into a canvas for self-expression. 
+                    <br><br>
                     Every design I create is personalized, polished, and crafted with care—because I believe your nails should be just as unique as you are.
                 </v-card-text>
             </v-card>
             
-            <v-card class="mx-10 my-3 ma-md-15 px-10 pt-5 pb-10 rounded-lg" elevation="16">
-                <v-card-title class="text-h4 text-md-h2 text-center">
+            <v-card class="mx-10 my-3 ma-md-15 px-10 pt-5 pb-10 rounded-xl" elevation="16">
+                <v-card-title class="text-h6 text-md-h2 text-center">
                     Client testimonials
                 </v-card-title>
-                <v-card-text class="text-body-1 text-md-h6 text-center mb-4">
+                <v-card-text class="text-body-4 text-md-h6 text-center mb-4">
                     If you don't believe us, hear it from our clients.
                 </v-card-text>
                 <Swiper
@@ -72,7 +74,7 @@
                 </v-card-text>
             </v-card>
 
-            <v-card class="ma-4 ma-md-15 pa-4 rounded-lg" elevation="16">
+            <v-card class="ma-4 ma-md-15 pa-4 rounded-xl" elevation="16">
                 <v-card-title class="text-h4 text-md-h2">About me</v-card-title>
                 <v-card-text class="text-body-1 text-md-h6">
                     What began as a passion project at home has grown into a professional nail artistry career built on creativity, precision, and care. Specializing in intricate and detailed designs, Kailyn turned her love for nail art into a business that highlights individuality and self-expression.
@@ -100,7 +102,7 @@
                 </v-container>
             </v-card>
 
-            <v-card class="pa-4 rounded-0" color="darkBackground" elevation="0">
+            <v-card class="ma-4 ma-md-15 pa-4 rounded-xl" color="darkBackground" elevation="10">
                 <v-card-title class="text-h4 text-md-h2">Why choose me:</v-card-title>
                 <v-card-text class="text-h6">
                     Because your nails deserve more than ordinary.
@@ -120,7 +122,7 @@
                             :color="isHovered1 ? 'primary' : 'white'">
                             <v-icon class="mt-5 ml-5">mdi-magnify-scan</v-icon>
                             <v-card-title>Attention to detail</v-card-title>
-                            <v-card-text>
+                            <v-card-text class="text-caption">
                                 Every set of nails is crafted with precision and care. From clean application to intricate designs, I ensure each client leaves with nails that look flawless and last.    
                             </v-card-text>
                         </v-card>
@@ -134,7 +136,7 @@
                             :color="isHovered2 ? 'primary' : 'white'">
                             <v-icon class="mt-5 ml-5">mdi-account-heart</v-icon>
                             <v-card-title>Personalized Care</v-card-title>
-                            <v-card-text>
+                            <v-card-text class="text-caption">
                                 No two clients are the same, and neither are their nails. I take the time to understand your style and preferences, creating designs that reflect your personality and vision.    
                             </v-card-text>
                         </v-card>
@@ -148,7 +150,7 @@
                             :color="isHovered3 ? 'primary' : 'white'">
                             <v-icon class="mt-5 ml-5">mdi-palette</v-icon>
                             <v-card-title>Creative Expertise</v-card-title>
-                            <v-card-text>
+                            <v-card-text class="text-caption">
                                 Specializing in intricate nail art, I bring creativity and innovation to every appointment. Whether you want something subtle or bold, I turn ideas into unique works of art at your fingertips.    
                             </v-card-text>
                         </v-card>

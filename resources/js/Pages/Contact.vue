@@ -20,7 +20,7 @@
             </v-parallax>
 
             <!-- About Us Details -->
-            <v-card class="ma-4 ma-md-15 pa-4 pa-md-8 rounded-lg" elevation="16">
+            <v-card class="ma-3 ma-md-6 pa-3 pa-md-6 rounded-xl" elevation="16">
                 <v-card-title class="text-h4 text-md-h2">Contact Us</v-card-title>
                 <v-card-text class="text-body-1 text-md-h6">
                     <strong>Head Office:</strong> 39 Hornbill Ave, Rooihuiskraal, Centurion<br>
@@ -29,7 +29,7 @@
                     <strong>Business Hours:</strong> Mon - Fri: 09:00 - 18:00, Sat: 08:00 - 13:00
                 </v-card-text>
             </v-card>
-            <v-row justify="center" class="mb-8">
+            <v-row justify="center" class="mb-6 mt-2">
                 <v-col cols="auto">
                     <v-btn
                     prepend-icon="mdi-calendar"
